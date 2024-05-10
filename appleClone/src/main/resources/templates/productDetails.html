@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html
+        xmlns:th="http://www.thymeleaf.org"
+        xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+        xmlns:sec="http://www.thymeleaf.org"
+>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" th:href="@{/image/apple-tab-logo.png}" />
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script th:src="@{/script.js}"></script>
+    <title>14-inch MacBook Pro - Space Black - Apple (MY)</title>
+
+    <style>
+        html {
+            /*font-family: SF Pro Text, SF Pro Icons, Helvetica Nee, Helvetica, Arial, sans-serif;*/
+            font-family: SF Pro Display,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+            color: #1D1D1F;
+        }
+
+
+        .link-nav {
+            color: rgba(12, 12, 12, 0.8);
+            font-size: 12px;
+            font-weight: 500;
+            /*transition-duration: 1.2s;*/
+        }
+
+        .link-nav-mobile {
+            color: rgba(12, 12, 12, 0.8);
+            font-size: 28px;
+            line-height: 1.4;
+            font-weight: 600;
+            letter-spacing: .007em;
+            padding: 3px 48px 6px;
+        }
+
+        .link-nav:hover {
+            color: rgba(0, 0, 0, 1);
+        }
+
+        .container-link-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer-list {
+            transition: transform .3s ease;
+        }
+
+        .sticky-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .sticky-banner {
+            position: fixed;
+            width: 100%;
+            background-color: #F5F5F7;
+            margin: auto;
+            border-top: 1px solid #d2d2d7;
+            bottom: 0;
+            min-height: 136px;
+            z-index: 100;
+        }
+
+        .inner-sticky-banner {
+            margin: 0 auto;
+            width: 980px;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+        }
+
+        .sticky-element {
+            position: sticky;
+            top: 0;
+        }
+
+        .active {
+            border-color: #0071e3;
+        }
+
+    </style>
+</head>
+
+
+<body>
+<header>
+    <!-- Desktop Navigation Bar        -->
+    <div id="desktop-nav" class="m-auto w-full max-w-5xl px-[22px] hidden md:block lg:block">
+        <ul class="flex w-auto h-11 justify-between">
+            <li class="w-fit">
+                <a href="https://www.apple.com/">
+                    <svg height="44" viewBox="0 0 14 44" width="14" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394
+                            8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187
+                            0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984
+                            2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579
+                            3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32
+                            3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19
+                            1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                    </svg>
+                </a>
+            </li>
+            <li class="grid grid-rows-1 grid-flow-col gap-10 w-fit">
+                <div id="nav-1" class="container-link-nav">
+                    <a class="link-nav" href="">Store</a>
+                </div>
+
+                <div id="nav-2" class="container-link-nav">
+                    <a class="link-nav" href="">Mac</a>
+                </div>
+
+                <div id="nav-3" class="container-link-nav">
+                    <a class="link-nav" href="">iPad</a>
+                </div>
+
+                <div id="nav-4" class="container-link-nav">
+                    <a class="link-nav" href="">iPhone</a>
+                </div>
+
+                <div id="nav-5" class="container-link-nav">
+                    <a class="link-nav" href="">Watch</a>
+                </div>
+
+                <div id="nav-6" class="container-link-nav">
+                    <a class="link-nav" href="">AirPods</a>
+                </div>
+
+                <div id="nav-7" class="container-link-nav">
+                    <a class="link-nav" href="">TV & Home</a>
+                </div>
+
+                <div id="nav-8" class="container-link-nav">
+                    <a class="link-nav" href="">Entertainment</a>
+                </div>
+
+                <div id="nav-9" class="container-link-nav">
+                    <a class="link-nav" href="">Accessories</a>
+                </div>
+
+                <div id="nav-10" class="container-link-nav">
+                    <a class="link-nav" href="">Support</a>
+                </div>
+            </li>
+            <li class="w-fit">
+                <a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="fit-content" height="44px" viewBox="0 0 15 44"  class="link-nav">
+                        <path
+                                d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,
+                            0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,
+                            0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,
+                            1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                        </path>
+                    </svg>
+                </a>
+            </li>
+            <li class="w-fit">
+                <a href="" style="color: beige;">
+                    <svg height="44" viewBox="0 0 14 44" width="fit-content" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333
+                            2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186
+                            2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0
+                            1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166
+                            1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178
+                            1.0178 0 0 1 1.0164 1.0166z"></path>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="m-auto w-full md:block lg:block absolute z-50">
+        <div id="nav-content-1" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Shop the Latest</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Accessories</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Quick Links</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Order Status</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Trade In</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Financing</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop Special Stores</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Education</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Business</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-2" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore Mac</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore All Mac</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Macbook Air</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Macbook Pro</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iMac</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac Mini</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac Studio</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac Pro</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Displays</a></div>
+                        <div class="text-[12px] text-[#333336] mt-[14px] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Compare Mac</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Mac Does That</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop Mac</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop Mac</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Mac Accessories</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Trade In</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Financing</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from Mac</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Mac Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+ from Mac</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">macOS Sonoma</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apps by Apple</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Continuity</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iCloud+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Mac for Business</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Education</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-3" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore iPad</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore All ipad</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">ipad Pro</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad Air</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad Mini</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Pencil</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Keyboards</a></div>
+                        <div class="text-[12px] text-[#333336] mt-[14px] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Compare iPad</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Why iPad</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop iPad</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop iPad</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPad Accessories</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Trade In</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Financing</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from iPad</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPad Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+ from iPad</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPadOS 17</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apps by Apple</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iCloud+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Education</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-4" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore iPhone</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore All iPhone</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone 15 Pro</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone 15</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone 14</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone 13</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone SE</a></div>
+                        <div class="text-[12px] text-[#333336] mt-[14px] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Compare iPad</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Switch from Android</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop iPhone</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop iPhone</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPhone Accessories</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Trade In</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Financing</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from iPhone</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPhone Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+ from iPhone</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iOS 17</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apps by Apple</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPhone Privacy</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iCloud+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Wallet, Pay</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-5" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore Watch</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore All Apple Watch</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch Series 9</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch Ultra 2</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch Series</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch Nike</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch Hermès</a></div>
+                        <div class="text-[12px] text-[#333336] mt-[14px] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Compare Watch</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Why Apple Watch</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop Watch</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop Apple Watch</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Watch Studio</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Watch Straps</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Watch Accessories</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Trade In</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Financing</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from Watch</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPhone Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+ from iPhone</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iOS 17</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apps by Apple</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iPhone Privacy</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">iCloud+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Wallet, Pay</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-6" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore AirPods</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore All AirPods</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods Pro (2th Generation)</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods (2th Generation)</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods (3th Generation)</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods Max</a></div>
+                        <div class="text-[12px] text-[#333336] mt-[14px] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Compare AirPods</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop AirPods</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop AirPods</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AirPods Accessories</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from AirPods</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AirPods Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+ Headphones</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Music</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-7" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore TV & Home</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore TV & Home</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple TV 4K</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">HomePod</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">HomePod Mini</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop TV & Home</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop Apple TV 4K</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop HomePod</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop HomePod mini</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Shop Siri Remote</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">TV & Home Accessories</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">More from TV & Home</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple TV Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AppleCare+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple TV app</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple TV+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Home app</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Music</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AirPlay</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-8" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore Entertainment</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore Entertainment</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple One</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple TV+</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Music</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Arcade</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Fitness+</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Podcasts</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Books</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">App Store</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Support</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple TV+ Support</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple Music Support</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-9" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Shop Accessories</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Explore Entertainment</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPhone</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Apple Watch</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">TV & Home</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore Accessories</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Made by Apple</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Beats by Dr. Dre</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">AirTag</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="nav-content-10" class="nav-content w-full bg-[#FFFFFF] hidden">
+            <div class="max-w-5xl m-auto px-[22px]">
+                <ul class="pt-[40px] pb-[84px] w-fit flex">
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Explore Support</div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iphone</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Mac</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">iPad</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Watch</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">AirPods</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">Music</a></div>
+                        <div class="text-[24px] font-semibold container-link-nav"><a class="hover:text-black" href="">TV</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Get Help</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Community</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Check Coverage</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Repair</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Contact Us</a></div>
+                    </li>
+                    <li class="w-fit pr-[88px]">
+                        <div class="text-[12px] text-[#6E6E73] mb-[10px]">Helpful Topics</div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Get AppleCare+</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Apple ID & Password</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Billing & Subscriptions</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Find My</a></div>
+                        <div class="text-[12px] text-[#333336] font-semibold container-link-nav"><a class="hover:text-black py-[7px]" href="">Accessibility</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Bar -->
+    <div id="mobile-nav" class="block md:hidden lg:hidden">
+        <div class="m-auto w-full pl-[6px] pr-[0px] md:px-[12px] lg:px-[12px] flex justify-between">
+            <ul>
+                <li class="w-fit">
+                    <a href="https://www.apple.com/">
+                        <svg height="49" viewBox="0 0 14 44" width="48" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.0729 17.6825a3.61 3.61 0 0 0 -1.7248 3.0365 3.5132 3.5132 0 0 0 2.1379 3.2223 8.394
+                                8.394 0 0 1 -1.0948 2.2618c-.6816.9812-1.3943 1.9623-2.4787 1.9623s-1.3633-.63-2.613-.63c-1.2187
+                                0-1.6525.6507-2.644.6507s-1.6834-.9089-2.4787-2.0243a9.7842 9.7842 0 0 1 -1.6628-5.2776c0-3.0984
+                                2.014-4.7405 3.9969-4.7405 1.0535 0 1.9314.6919 2.5924.6919.63 0 1.6112-.7333 2.8092-.7333a3.7579
+                                3.7579 0 0 1 3.1604 1.5802zm-3.7284-2.8918a3.5615 3.5615 0 0 0 .8469-2.22 1.5353 1.5353 0 0 0 -.031-.32
+                                3.5686 3.5686 0 0 0 -2.3445 1.2084 3.4629 3.4629 0 0 0 -.8779 2.1585 1.419 1.419 0 0 0 .031.2892 1.19
+                                1.19 0 0 0 .2169.0207 3.0935 3.0935 0 0 0 2.1586-1.1368z"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <ul class="flex justify-between">
+                <li class="w-[48px]">
+                    <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48px" height="48px" viewBox="0 0 15 44"  class="link-nav">
+                            <path
+                                    d="M14.298,27.202l-3.87-3.87c0.701-0.929,1.122-2.081,1.122-3.332c0-3.06-2.489-5.55-5.55-5.55c-3.06,
+                                    0-5.55,2.49-5.55,5.55 c0,3.061,2.49,5.55,5.55,5.55c1.251,0,2.403-0.421,3.332-1.122l3.87,3.87c0.151,0.151,
+                                    0.35,0.228,0.548,0.228 s0.396-0.076,0.548-0.228C14.601,27.995,14.601,27.505,14.298,27.202z M1.55,20c0-2.454,
+                                    1.997-4.45,4.45-4.45 c2.454,0,4.45,1.997,4.45,4.45S8.454,24.45,6,24.45C3.546,24.45,1.55,22.454,1.55,20z">
+                            </path>
+                        </svg>
+                    </a>
+                <li class="w-[48px]">
+                    <a href="" style="color: beige;">
+                        <svg height="48" viewBox="0 0 14 44" width="48px" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m11.3535 16.0283h-1.0205a3.4229 3.4229 0 0 0 -3.333-2.9648 3.4229 3.4229 0 0 0 -3.333
+                                    2.9648h-1.02a2.1184 2.1184 0 0 0 -2.117 2.1162v7.7155a2.1186 2.1186 0 0 0 2.1162 2.1167h8.707a2.1186
+                                    2.1186 0 0 0 2.1168-2.1167v-7.7155a2.1184 2.1184 0 0 0 -2.1165-2.1162zm-4.3535-1.8652a2.3169 2.3169 0 0
+                                    1 2.2222 1.8652h-4.4444a2.3169 2.3169 0 0 1 2.2222-1.8652zm5.37 11.6969a1.0182 1.0182 0 0 1 -1.0166
+                                    1.0171h-8.7069a1.0182 1.0182 0 0 1 -1.0165-1.0171v-7.7155a1.0178 1.0178 0 0 1 1.0166-1.0166h8.707a1.0178
+                                    1.0178 0 0 1 1.0164 1.0166z"></path>
+                        </svg>
+                    </a>
+                </li>
+                <li class="w-[48px] flex justify-center items-center">
+                    <button type="button" class="flex justify-center" onclick="toggleMobileMenu()">
+                        <svg width="18" height="18" viewBox="0 0 18 18">
+                            <polyline fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 12, 16 12">
+                            </polyline>
+                            <polyline fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" points="2 5, 16 5">
+                            </polyline>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <div id="nav-list-mobile" class="absolute w-full bg-[#ffffff] z-[1000] h-dvh top-0 hidden">
+            <div class="flex justify-end">
+                <div class="flex justify-center items-center w-[48px] h-[48px]">
+                    <button class="close-button" type="button" onclick="clickTimes()">
+                        <span class="text-[36px] block w-fit h-fit">&times;</span>
+                    </button>
+                </div>
+            </div>
+            <ul class="mobile-nav">
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Store</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Mac</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">iPad</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">iPhone</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Watch</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">AirPods</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">TV & Home</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Entertainment</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Accessories</a></li>
+                <li class="container-link-nav"><a class="link-nav-mobile" href="">Support</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div>
+        <div class="m-auto w-full max-w-5xl pl-[22px] pr-[15px] md:pr-[22px] lg:pr-[22px] flex justify-between">
+            <div class="mt-4">
+                <a href="" class="text-[17px] md:text-xl lg:text-xl font-semibold">MacBook Pro</a>
+            </div>
+            <div class="grid grid-rows-1 grid-flow-col gap-8 w-fit pt-[18px] hidden md:grid lg:grid">
+                <div><a class="text-xs" href="">Overview</a></div>
+                <div><a class="text-xs" href="">macOS</a></div>
+                <div><a class="text-xs" href="">Compare</a></div>
+            </div>
+            <div class="flex items-end block md:hidden lg:hidden">
+                <div id="mac-overview-list-expand" class="text-[20px] md:hidden lg:hidden">
+                    <button type="button" onclick="clickOpen()">&#709</button>
+                </div>
+                <div id="mac-overview-list-close" class="text-[20px] hidden">
+                    <button type="button" onclick="clickClose()">&#709</button>
+                </div>
+            </div>
+        </div>
+        <div id="mac-overview-list" class="flex flex-col pt-[34px] px-[32px] pb-[22px] hidden absolute z-[1000] bg-[#FFFFFF] w-full">
+            <div class="h-[34px]"><a class="text-[16px]" href="">Overview</a></div>
+            <div class="h-[34px]"><a class="text-[16px]" href="">macOS</a></div>
+            <div class="h-[34px]"><a class="text-[16px]" href="">Compare</a></div>
+        </div>
+    </div>
+    <div class="border-b border-b-[#00000029] mt-4"></div>
+</header>
+
+<div id="main-content">
+    <div class="m-auto flex justify-center py-4 bg-[#F5F5F7]">
+        <p class="text-[#1D1D1F] text-center mx-[40px] text-[14px]">Pay 0% interest for up to 24 months. Terms apply.<sup>◊◊</sup> <a class="text-[#0066CC]" href=""><span class="hover:underline">Learn more</span><span class="pl-1">&#8250;</span></a></p>
+    </div>
+
+    <div class="w-full">
+        <div id="column-container" class="mt-[52px] w-auto md:w-[980px] lg:w-[980px] m-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
+            <div id="left-column" class="pl-[10px] mt-[42px] mr-[60px] mb-[50px] top-[0]">
+                <img src="../static/image/m3-max-pro-spaceblack-small.jpeg" alt="m3-max-pro-spaceblack-small-size" width="410px" height="247px">
+                <div class="py-[22px] mb-[35px] text-center">
+                    <a class="text-[#0066CC] text-[14px]"><span class="hover:underline cursor-pointer">View gallery</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                </div>
+                <div>
+                    <ul class="flex justify-evenly mt-[14px] mb-[26px]">
+                        <li class="flex flex-col items-center">
+                            <div class="">
+                                <svg viewBox="0 0 35 35" role="img" aria-hidden="true" width="35px" height="35px">
+                                    <path fill="none" d="M0 0h35v35H0z"></path>
+                                    <path d="M27.687 10.547l-9-4.852a2.5 2.5 0 00-2.373 0l-9 4.852A2.5 2.5 0 006 12.748v9.471a2.494 2.494 0 001.313 2.2l9 4.852a2.5 2.5 0 002.373 0l9-4.852a2.5 2.5 0 001.314-2.2v-9.471a2.5 2.5 0 00-1.313-2.201zm-10.9-3.971a1.5 1.5 0 011.424 0l9 4.852c.041.022.072.055.11.081l-4.41 2.507-9.628-5.55zm-4.538 2.446l9.651 5.566-4.4 2.5-9.823-5.58c.038-.026.07-.059.111-.081zM7.788 23.539A1.5 1.5 0 017 22.219v-9.471a1.494 1.494 0 01.069-.436L17 17.957v10.516a1.494 1.494 0 01-.212-.082zM28 22.219a1.5 1.5 0 01-.788 1.32l-9 4.851a1.481 1.481 0 01-.212.082V17.957l9.931-5.646a1.5 1.5 0 01.069.436z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="text-[12px] font-medium">Free delivery</p>
+                        </li>
+
+                        <li class="flex flex-col items-center">
+                            <div class="">
+                                <svg viewBox="0 0 35 35" role="img" aria-hidden="true" width="35px" height="35px">
+                                    <path fill="none" d="M0 0h35v35H0z"></path>
+                                    <path d="M12.249 9.022l-4.461 2.4c-.041.022-.073.055-.111.081l9.823 5.588 4.4-2.5zM27.322 11.507c-.038-.025-.069-.058-.11-.081l-9-4.852a1.5 1.5 0 00-1.424 0l-3.5 1.889 9.628 5.55zM10.8 18.5a.5.5 0 01-.5.5H7v3.219a1.5 1.5 0 00.788 1.32l9 4.852a1.494 1.494 0 00.212.082V17.957l-9.931-5.645a1.494 1.494 0 00-.069.436V18h3.3a.5.5 0 01.5.5zM18 17.957v10.515a1.481 1.481 0 00.212-.082l9-4.851a1.5 1.5 0 00.788-1.32v-9.471a1.5 1.5 0 00-.069-.436z" fill="none"></path>
+                                    <path d="M27.687 10.547l-9-4.852a2.5 2.5 0 00-2.373 0l-9 4.852A2.5 2.5 0 006 12.748V17h1v-4.252a1.494 1.494 0 01.069-.436L17 17.957v10.516a1.494 1.494 0 01-.212-.082l-9-4.852A1.5 1.5 0 017 22.219V20H6v2.219a2.494 2.494 0 001.313 2.2l9 4.852a2.5 2.5 0 002.373 0l9-4.852a2.5 2.5 0 001.314-2.2v-9.471a2.5 2.5 0 00-1.313-2.201zm-10.9-3.971a1.5 1.5 0 011.424 0l9 4.852c.041.022.072.055.11.081l-4.41 2.507-9.628-5.55zm-9.11 4.932c.038-.026.07-.059.111-.081l4.461-2.4 9.651 5.561-4.4 2.5zM28 22.219a1.5 1.5 0 01-.788 1.32l-9 4.851a1.481 1.481 0 01-.212.082V17.957l9.931-5.646a1.5 1.5 0 01.069.436z">
+                                    </path>
+                                    <path d="M2.507 18l1.646-1.646a.5.5 0 00-.707-.707l-2.5 2.5a.5.5 0 000 .707l2.5 2.5a.5.5 0 10.707-.707L2.507 19H6v-1zM10.3 19a.5.5 0 000-1H7v1zM6 18h1v1H6z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <p class="text-[12px] font-medium">Free and easy returns</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-[14px] text-center flex flex-col items-center">
+                    <p>Have questions about buying a Mac?</p>
+                    <a class="text-[#0066CC] hover:underline" href="">Chat with a Mac Specialist</a>
+                </div>
+            </div>
+            <div id="right-column" class="pt-[19px] pb-[14px]">
+                <h1 class="text-[39px] font-semibold leading-[1.1] tracking-[0]">Customise your 14‑inch MacBook Pro - Space Black</h1>
+                <div class="mb-[35px]">
+                    <ul class="pt-[12px]">
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">Apple M3 Max chip with 14‑core CPU, 30‑core GPU and 16‑core Neural Engine</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">36GB unified memory</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">1TB SSD storage</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">14-inch Liquid Retina XDR display²</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">96W USB-C Power Adapter</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">Three Thunderbolt 4 ports, HDMI port, SDXC card slot, headphone jack, MagSafe 3 port</li>
+                        <li class="text-[#1D1D1F] text-[14px] mb-[11px]">Backlit Magic Keyboard with Touch ID - US English</li>
+                    </ul>
+                </div>
+                <div class="border-t border-t-[#d2d2d7] pt-[11px] pb-[27px] text-[14px]">
+                    <h2 class="font-semibold pt-[10px] pb-[12px]">Add a trade-in</h2>
+                    <p class="pb-[4px]">Get credit towards a new Mac when you trade in your eligible computer. Or recycle it for free.**</p>
+                    <a class="text-[#0066CC] text-[14px] mt-[3px]"><span class="hover:underline cursor-pointer">Get started</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                </div>
+
+
+                <div>
+                    <div class="border-t border-t-[#d2d2d7]">
+                        <div class="mt-[17px]">
+                            <h2 class="font-semibold text-[17px]">Chip (Processor)</h2>
+                            <a class="text-[#0066CC] text-[14px] mt-[4px]"><span class="hover:underline cursor-pointer">Which chip is right for you?</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="chip-1" class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer active">
+                            <input id="chip-30" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    Apple M3 Max chip with 14‑core CPU, 30‑core GPU and 16‑core Neural Engine
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto"></span>
+                            </label>
+                        </div>
+                        <div id="chip-2" class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <input id="chip-40" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    Apple M3 Max chip with 16‑core CPU, 40‑core GPU and 16‑core Neural Engine
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 1,200.00</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[#6E6E73] text-[17px] pt-[20px] pl-[16px]">Select M3 Max with 30-core GPU to add 96GB of memory. Select M3 Max with 40-core GPU to add 48GB, 64GB, or 128GB.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div>
+                        <div class="mt-[17px]">
+                            <h2 class="font-semibold text-[17px]">Memory</h2>
+                            <a class="text-[#0066CC] text-[14px] mt-[4px]"><span class="hover:underline cursor-pointer">How much memory is right for you?</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div  class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer active">
+                            <input id="memory-36" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    36GB unified memory
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto"></span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] border-[#86868b] opacity-[0.4]">
+                            <input id="memory-48" name="chip" type="radio" class="opacity-0 absolute disabled:opacity-75">
+                            <label class="flex w-full p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    48GB unified memory
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 800.00</span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] border-[#86868b] opacity-[0.4]">
+                            <input id="memory-64" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    64GB unified memory
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 1,600.00</span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <input id="memory-96" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    96GB unified memory
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 3,200.00</span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] border-[#86868b] opacity-[0.4]">
+                            <input id="memory-128" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    128GB unified memory
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 4,800.00</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="text-[#6E6E73] text-[17px] pt-[20px] pl-[16px]">96GB available with M3 Max with 30-core GPU. 48GB, 64GB, or 128GB available with M3 Max with 40-core GPU.</p>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div>
+                        <div class="mt-[17px]">
+                            <h2 class="font-semibold text-[17px]">Storage</h2>
+                            <a class="text-[#0066CC] text-[14px] mt-[4px]"><span class="hover:underline cursor-pointer">How much storage is right for you?</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer active">
+                            <input id="storage-1TB" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    1TB SSD storage
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto"></span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <input id="storage-2TB" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    2TB SSD storage
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 1,600.00</span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <input id="storage-4TB" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    4TB SSD storage
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 4,000.00</span>
+                            </label>
+                        </div>
+                        <div class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <input id="storage-8TB" name="chip" type="radio" class="opacity-0 absolute">
+                            <label class="flex w-full cursor-pointer p-[15px]">
+                                <span class="text-[17px] font-semibold w-[50%]">
+                                    8TB SSD storage
+                                </span>
+                                <span class="w-[50%] text-[17px] text-end font-semibold my-auto">+ RM 8,800.00</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div>
+                        <div class="mt-[17px]">
+                            <h2 class="font-semibold text-[17px]">Keyboard Language</h2>
+                            <a class="text-[#0066CC] text-[14px] mt-[4px]"><span class="hover:underline cursor-pointer">Learn more</span><span class="cursor-pointer">&nbsp;&#8853;</span></a>
+                        </div>
+                    </div>
+                    <div>
+                        <div id="div-select" class="mt-[14px] p-[14px] border-[1.6px] rounded-[12px] cursor-pointer">
+                            <span class="text-[#6E6E73] text-[12px] absolute text-ellipsis">Keyboard Language</span>
+                            <select name="keyboard" class="pt-[18px] text-[17px] border-none outline-none" onclick="">
+                                <option value="065-CGPF">Backlit Magic Keyboard with Touch ID - US English</option>
+                                <option value="CH065-CGPF">Backlit Magic Keyboard with Touch ID - Chinese (Pinyin)</option>
+                                <option value="TA065-CGPF">Backlit Magic Keyboard with Touch ID - Chinese (Zhuyin)</option>
+                                <option value="AB065-CGPF">Backlit Magic Keyboard with Touch ID - Arabic</option>
+                                <option value="J065-CGPF">Backlit Magic Keyboard with Touch ID - Japanese</option>
+                            </select>
+                            <span class=""></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mt-[14px] p-[30px] bg-[#fafafc] text-[14px]">
+                    <h2 class="font-semibold pt-[10px] pb-[12px]">Need a moment?</h2>
+                    <p class="pb-[8px]">Keep all your selections by saving this device to Your Saves, then come back anytime and pick up right where you left off.</p>
+                    <a class="text-[#0066CC] flex items-center ml-[-5px]">
+                        <svg width="21" height="21" role="img">
+                            <path fill="none" d="M0 0h21v21H0z"></path>
+                            <path fill="#0066CC" d="M12.8 4.25a1.202 1.202 0 0 1 1.2 1.2v10.818l-2.738-2.71a1.085 1.085 0 0 0-1.524 0L7 16.269V5.45a1.202 1.202 0 0 1 1.2-1.2h4.6m0-1H8.2A2.2 2.2 0 0 0 6 5.45v11.588a.768.768 0 0 0 .166.522.573.573 0 0 0 .455.19.644.644 0 0 0 .38-.128 5.008 5.008 0 0 0 .524-.467l2.916-2.885a.084.084 0 0 1 .118 0l2.916 2.886a6.364 6.364 0 0 0 .52.463.628.628 0 0 0 .384.131.573.573 0 0 0 .456-.19.768.768 0 0 0 .165-.522V5.45a2.2 2.2 0 0 0-2.2-2.2Z">
+                            </path>
+                        </svg>
+                        <span class="cursor-pointer hover:underline">Save for later</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="relative max-w-[1070px] min-w-[980px] m-auto">
+            <img src="../static/image/apple-tv.jpeg" alt="apple-tv" width="1070px" height="376px">
+            <div class="absolute w-[980px] h-[376px] top-[80px] left-[65px]">
+                <div class="w-fit">
+                    <img src="../static/image/apple-tv-plus-logo-standard.png" alt="apple-tv-logo" width="50px" height="20px">
+                    <div class="text-[#FFFFFF] font-semibold text-[32px] tracking-[0.004em] leading-[1.25] mt-[18px]">
+                        <p>Get 3 months of</p>
+                        <p>Apple TV+ free when</p>
+                        <p> you buy a Mac.***</p>
+                    </div>
+                    <ul class="flex mt-[10px]">
+                        <li class="mr-[13px]"><a class="text-[#2997FF]"><span class="hover:underline">Try it free^ </span>&#65310;</a></li>
+                        <li class="ml-[13px]"><a class="text-[#2997FF]"><span class="hover:underline">Learn more </span>&#65310;</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-[#f5f5f7;] flex justify-center mb-[136px]">
+        <div class="text-[12px] px-[22px] max-w-[980px]">
+            <div class="pt-[17px] mt-[10px] text-[rgba(0,0,0,.56)]">
+                <p class="mt-[10px]">
+                    * Monthly pricing is after purchase using credit card interest at 0% p.a. over a nine-month tenure. Monthly pricing is
+                    rounded to the nearest ringgit and displayed for each product added in the order. Exact pricing will be for the whole
+                    order and provided by your bank, subject to your bank’s terms and conditions.
+                </p>
+                <p class="mt-[10px]">
+                    ◊◊ <span class="font-semibold">Terms & Conditions of 0% Interest for instalment payment plans</span>
+                </p>
+                <p class="mt-[10px]">
+                    0% interest instalment payment plans are available to qualified Malaysia residents and provided by Affin,
+                    Ambank, CIMB, Hong Leong, Maybank, OCBC and RHB. To qualify for the 0% interest instalment offers, your
+                    purchase value must exceed MYR 2,000 for a single transaction. All purchases on 0% interest instalment plans
+                    are subject to approval by your credit card issuer. Refer to your credit card issuer’s website for conditions,
+                    fees and charges.
+                </p>
+                <p class="mt-[10px]">
+                    0% interest instalment payment plans are available to qualified Malaysia residents and provided by Affin,
+                    Ambank, CIMB, Hong Leong, Maybank, OCBC and RHB. To qualify for the 0% interest instalment offers, your
+                    purchase value must exceed MYR 2,000 for a single transaction. All purchases on 0% interest instalment plans
+                    are subject to approval by your credit card issuer. Refer to your credit card issuer’s website for conditions,
+                    fees and charges.
+                </p>
+                <p class="mt-[10px]">
+                    Instalment offers are only available to individual customers using consumer credit cards. Apple Employee EPP orders,
+                    Education Store orders, business purchases and institutional purchases are not eligible for this offer. Purchases on
+                    AMEX and debit cards are not eligible for this offer. If your instalment order is not approved by your credit card issuer,
+                    we will not be informed of the reason. Please contact your credit card issuer for further information. Purchases will be
+                    billed to your account upon order placement. Offer available on advertised or ticketed price. Finance charges will appear
+                    on your credit card statement.
+                </p>
+                <p class="mt-[10px]">
+                    The information is current as of 26 March 2024.
+                </p>
+                <p class="mt-[10px]">
+                    ** Trade-in service is provided by Apple’s trade-in partners. Trade-in value quotes are estimated only and actual values may
+                    be lower than the estimation. Trade-in values vary based on the condition, year and model of your trade-in device. Not all devices
+                    are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied
+                    towards qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided
+                    when the estimate was made. Apple’s trade-in partners reserve the right to refuse, cancel or limit quantity of any trade-in transaction
+                    for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and
+                    limitations may apply. For recycling eligible equipment Terms and restrictions may apply.
+                </p>
+                <p class="mt-[10px]">
+                    ** Trade-in service is provided by Apple’s trade-in partners. Trade-in value quotes are estimated only and actual values may
+                    be lower than the estimation. Trade-in values vary based on the condition, year and model of your trade-in device. Not all devices
+                    are eligible for credit. You must be at least the age of majority to be eligible to trade in for credit. Trade-in value may be applied
+                    towards qualifying new device purchase. Actual value awarded is based on receipt of a qualifying device matching the description provided
+                    when the estimate was made. Apple’s trade-in partners reserve the right to refuse, cancel or limit quantity of any trade-in transaction
+                    for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and
+                    limitations may apply. For recycling eligible equipment Terms and restrictions may apply.
+                </p>
+                <p class="mt-[10px]">
+                    1. 1GB = 1 billion bytes and 1TB = 1 trillion bytes; actual formatted capacity less.
+                </p>
+                <p class="mt-[10px]">
+                    2. The displays on the 14-inch and 16-inch MacBook Pro have rounded corners at the top. When measured as a standard rectangular shape, the
+                    screens are 14.2 inches and 16.2 inches diagonally (actual viewable area is less).
+                </p>
+                <p class="mt-[10px]">
+                    We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a
+                    previous visit to Apple.
+                </p>
+                <hr class="mt-[10px] border-[rgba(0,0,0,.2)]">
+            </div>
+            <div class="text-[rgba(0,0,0,.72)] text-[12px] py-[17px]">
+                <nav class="flex">
+                    <div class="flex mr-[5px] py-[3px] pr-[4px]">
+                        <a class="hover:underline" href="">
+                            <img src="../static/image/apple-icon.png" alt="apple-icon" width="14px" height="18px">
+                        </a>
+                    </div>
+                    <div class="flex mr-[5px] py-[3px] pr-[4px]">
+                        <p class="text-[rgba(0,0,0,.56)] mr-[7px]">&#65310;</p>
+                        <a class="hover:underline" href="">Mac</a>
+                    </div>
+                    <div class="flex mr-[5px] py-[3px] pr-[4px]">
+                        <p class="text-[rgba(0,0,0,.56)] mr-[7px]">&#65310;</p>
+                        <a class="hover:underline" href="">MacBook Pro</a>
+                    </div>
+                    <div class="flex mr-[5px] py-[3px] pr-[4px]">
+                        <p class="text-[rgba(0,0,0,.56)] mr-[7px]">&#65310;</p>
+                        <p>Buy MacBook Pro</p>
+                    </div>
+                </nav>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-5 md:gap-4 lg:gap-4 place-content-stretch leading-[1.3333733333em]">
+                <div>
+                    <div class="border-y border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Shop and Learn</p>
+                        <div id="mobile-footer-1" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(1)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Shop and Learn</p>
+                            <div>
+                                <button type="button" id="button-open-1" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-1" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-1" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Store</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Mac</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">iPad</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">iPhone</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Watch</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">AirPods</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">TV & Home</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">AirTag</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Accessories</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Gift Cards</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0] pt-[10px] md:pt-[12px] lg:pt-[12px]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Apple Wallet</p>
+                        <div id="mobile-footer-2" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(2)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Apple Wallet</p>
+                            <div>
+                                <button type="button" id="button-open-2" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-2" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-2" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Wallet</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Pay</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Account</p>
+                        <div id="mobile-footer-3" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(3)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Account</p>
+                            <div>
+                                <button type="button" id="button-open-3" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-3" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-3" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Manage Your Apple ID</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Store Account</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">iCloud.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0] pt-[10px] md:pt-[12px] lg:pt-[12px]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Entertainment</p>
+                        <div id="mobile-footer-4" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(4)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Entertainment</p>
+                            <div>
+                                <button type="button" id="button-open-4" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-4" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-4" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple One</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple TV+</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Music</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Arcade</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Fitness+</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Podcasts</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Books</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">App Store</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Apple Store</p>
+                        <div id="mobile-footer-5" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(5)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Apple Store</p>
+                            <div>
+                                <button type="button" id="button-open-5" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-5" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-5" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Store App</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Financing</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Order Status</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Shopping Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">For Business</p>
+                        <div id="mobile-footer-6" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(6)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">For Business</p>
+                            <div>
+                                <button type="button" id="button-open-6" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-6" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-6" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple and Business</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Shop for Business</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0] pt-[10px] md:pt-[12px] lg:pt-[12px]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">For Education</p>
+                        <div id="mobile-footer-7" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(7)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">For Education</p>
+                            <div>
+                                <button type="button" id="button-open-7" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-7" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-7" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple and Education</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Shop for University</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0] pt-[10px] md:pt-[12px] lg:pt-[12px]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">For Healthcare</p>
+                        <div id="mobile-footer-8" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(8)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">For Healthcare</p>
+                            <div>
+                                <button type="button" id="button-open-8" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-8" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-8" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple in Healthcare</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Health on Apple Watch</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">Apple Values</p>
+                        <div id="mobile-footer-9" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(9)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">Apple Values</p>
+                            <div>
+                                <button type="button" id="button-open-9" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-9" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-9" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Accessibility</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Education</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Environment</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Privacy</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Supplier Responsibility</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-b border-[rgba(0,0,0,.3)] md:border-0 lg:border-[0] py-[10px] mb:py[0] lg:py-[0] pt-[10px] md:pt-[12px] lg:pt-[12px]">
+                        <p class="[rgba(0,0,0,.88)] font-medium mb-[0.8em] hidden md:block lg:block">About Apple</p>
+                        <div id="mobile-footer-10" class="flex justify-between block md:hidden lg:hidden" onclick="footerOpen(10)">
+                            <p class="text-[rgba(0,0,0)] md:text-[rgba(0,0,0,.88)] lg:text-[rgba(0,0,0,.88)] font-normal md:font-medium lg:font-medium mb-[0] md:mb-[0.8em] lg:mb-[0.8em]">About Apple</p>
+                            <div>
+                                <button type="button" id="button-open-10" class="absolute text-[18px] font-light h-fit right-[20px]">&#709;</button>
+                                <button type="button" id="button-close-10" class="absolute text-[18px] font-light h-fit right-[20px] hidden">&#708;</button>
+                            </div>
+                        </div>
+                        <ul id="footer-list-10" class="hidden md:block lg:block pt-[16px] md:pt-[0] lg-[0] px-[14px] md:px-[0] lg:px-[0]">
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Newsroom</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Apple Leadership</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Career Opportunities</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Investors</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Ethics & Compliance</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Events</a></li>
+                            <li class="mb-[0.8em]"><a class="text-[rgba(0,0,0,.72)] hover:underline">Contact Apple</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-[rgba(0,0,0,.56)] pt-[17px] md:pt-[37px] lg:pt-[37px] pb-[11px]">
+                <div class="pb-[8px] md:pb-[19px] lg:pb-[19px]">
+                    <p>More ways to shop: <a class="text-[#0066CC] underline" href="">Find a retailer</a> near you. Or call 1800-80-6419.</p>
+                </div>
+                <hr class="mb-[10px] border-[rgba(0,0,0,.2)] hidden md:block lg:block">
+                <div class="mt-[5px] text-[rgba(0,0,0,.72)] md:float-right lg:float-right pb-[8px] md:pb-[0] lg:pb-[0]">
+                    <a class="hover:underline" href="">Malaysia</a>
+                </div>
+                <div class="block md:flex lg:flex pb-[6px]">
+                    <div class="mt-[5px] mr-[30px]">
+                        <p>Copyright © 2024 Apple Inc. All rights reserved.</p>
+                    </div>
+
+                    <div class="mt-[5px] text-[rgba(0,0,0,.72)] flex md:flex lg:flex mr-[30px]">
+                        <div class="flex pr-[9px] md:pr-[0] lg:pr-[0]">
+                            <div class="pr-[9px] md:px-[9px] lg:px:[9px]">
+                                <a class="hover:underline whitespace-nowrap" href="">Privacy Policy</a>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="border-l h-[10px] border-[rgba(0,0,0,.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="flex pr-[9px] md:pr-[0] lg:pr-[0]">
+                            <div class="pr-[9px] md:px-[9px] lg:px:[9px]">
+                                <a class="hover:underline whitespace-nowrap" href="">Terms of Use</a>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="border-l-2 h-[10px] border-[rgba(0,0,0,.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="flex pr-[9px] md:pr-[0] lg:pr-[0]">
+                            <div class="pr-[9px] md:px-[9px] lg:px:[9px]">
+                                <a class="hover:underline whitespace-nowrap" href="">Sales & Refunds</a>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="border-l-2 h-[10px] border-[rgba(0,0,0,.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="flex pr-[9px] md:pr-[0] lg:pr-[0]">
+                            <div class="pr-[9px] md:px-[9px] lg:px:[9px]">
+                                <a class="hover:underline whitespace-nowrap" href="">Legal</a>
+                            </div>
+                            <div class="flex items-center">
+                                <div class="border-l h-[10px] border-[rgba(0,0,0,.5)]"></div>
+                            </div>
+                        </div>
+                        <div class="pr-[9px] md:px-[9px] lg:px:[9px]">
+                            <a class="hover:underline whitespace-nowrap" href="">Site Map</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="sticky-container">
+        <div id="stickyBanner" class="sticky-banner">
+            <div class="inner-sticky-banner">
+                <div class="flex pt-[36px] pr-[10px]">
+                    <div class="me-[8px]">
+                        <svg class="as-svgicon-rtl-mirrored as-svgicon as-svgicon-boxtruck as-svgicon-reduced as-svgicon-boxtruckreduced" viewBox="0 0 25 25" role="img" aria-hidden="true" width="25px" height="25px">
+                            <path fill="none" d="M0 0h25v25H0z"></path>
+                            <path fill="#1d1d1f" d="m23.482 12.847-2.92-3.209A1.947 1.947 0 0 0 18.985 9H17V6.495a2.5 2.5 0 0 0-2.5-2.5h-11a2.5 2.5 0 0 0-2.5 2.5v9.75a2.5 2.5 0 0 0 2.5 2.5h.548A2.746 2.746 0 0 0 6.75 21.02 2.618 2.618 0 0 0 9.422 19h6.681a2.744 2.744 0 0 0 5.347-.23h.735A1.656 1.656 0 0 0 24 16.98v-2.808a1.937 1.937 0 0 0-.518-1.325ZM8.426 18.745a1.74 1.74 0 0 1-3.352 0 1.577 1.577 0 0 1 .015-1 1.738 1.738 0 0 1 3.322 0 1.578 1.578 0 0 1 .015 1ZM9.447 18a2.726 2.726 0 0 0-5.394-.255H3.5a1.502 1.502 0 0 1-1.5-1.5v-9.75a1.502 1.502 0 0 1 1.5-1.5h11a1.502 1.502 0 0 1 1.5 1.5V18Zm10.972.77a1.738 1.738 0 0 1-3.337 0 1.573 1.573 0 0 1 0-1 1.742 1.742 0 1 1 3.337 1ZM23 16.98c0 .569-.229.79-.815.79h-.735A2.73 2.73 0 0 0 17 16.165V10h1.986a.976.976 0 0 1 .838.314l2.927 3.214a.95.95 0 0 1 .249.644Zm-1.324-3.36a.512.512 0 0 1 .174.38h-3.306a.499.499 0 0 1-.544-.528V11h1.073a.76.76 0 0 1 .594.268Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="text-[14px]">
+                        <p class="font-semibold">Delivery:<p>
+                        <p>In Stock</p>
+                        <p>Free Shipping</p>
+                        <a class="text-[#0066CC] pt-[6px]"><span class="hover:underline">Get delivery dates</span><span>&#8853;</span></a>
+                    </div>
+                </div>
+                <div class="flex pt-[24px] pb-[20px]">
+                    <div class="text-end flex flex-col tracking-[.009em] leading-[1.17]">
+                        <div>
+                            <p class="text-[24px] font-semibold">RM 14,799.00 or</p>
+                        </div>
+                        <div>
+                            <p class="text-[24px] font-semibold">RM 616.63/mo. for 24 mo.*</p>
+                        </div>
+                        <div class="mt-[10px]">
+                            <a class="text-[#0066CC] hover:underline pt-[6px]"><span class="hover:underline">Explore monthly instalment options&nbsp;</span><span>&gt;</span></a><a><span class="text-[#0066CC]"> &#8853;</span></a>
+                        </div>
+                    </div>
+                    <div class="ps-[15px]">
+                        <button type="submit" class="text-[14px] py-[8px] px-[15px] text-[#FFFFFF] bg-[#0071E3] w-full rounded-[8px]">Add to Bag</button>
+                    </div>
+                    <div class="mb-[8px] text-end">
+                        <a class="text-[#0066CC] flex items-center">
+                            <svg width="35" height="35" class="as-svgicon as-svgicon-bookmark as-svgicon-base as-svgicon-bookmarkbase" role="img" aria-hidden="true">
+                                <path fill="none" d="M0 0h35v35H0z"></path>
+                                <path fill="#0066CC" d="M21.952 6.433a2.157 2.157 0 0 1 1.567.481A2.228 2.228 0 0 1 24 8.516v19.866a.709.709 0 0 1-.018.178.7.7 0 0 1-.058-.013
+                                8.985 8.985 0 0 1-.757-.674l-4.866-4.901a1.111 1.111 0 0 0-1.602 0l-4.857 4.891a7.25 7.25 0 0 1-.754.676.145.145 0 0 1-.053.028h-.015a.681.681
+                                0 0 1-.02-.185V8.516a2.228 2.228 0 0 1 .48-1.602 2.158 2.158 0 0 1 1.568-.48h8.904m0-1h-8.904a3.077 3.077 0 0 0-2.278.776A3.144 3.144 0 0 0 10
+                                8.516v19.866a1.276 1.276 0 0 0 .276.868.956.956 0 0 0 .76.317 1.073 1.073 0 0 0 .632-.213 8.377 8.377 0 0 0 .874-.776l4.866-4.9a.115.115 0 0 1 .184
+                                0l4.866 4.9a10.454 10.454 0 0 0 .868.77 1.048 1.048 0 0 0 .639.219.956.956 0 0 0 .76-.317 1.276 1.276 0 0 0 .275-.868V8.516a3.144 3.144 0 0 0-.77-2.306
+                                3.077 3.077 0 0 0-2.278-.776Z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('.container-link-nav');
+        const navContents = document.querySelectorAll('.nav-content');
+
+        // Function to hide all nav contents except for the one with given id
+        function hideOtherNavContents(exceptId) {
+            navContents.forEach(function(navContent) {
+                if (navContent.id !== exceptId) {
+                    navContent.style.maxHeight = 0;
+                    navContent.classList.add('hidden');
+                    document.getElementById('main-content').classList.remove('blur');
+                }
+            });
+        }
+
+        // Function to check if the mouse is inside a given element or any of its descendants
+        function isMouseInside(element, event) {
+            return element.contains(event.relatedTarget);
+        }
+
+        navLinks.forEach(function(navLink) {
+            navLink.addEventListener('mouseover', function() {
+                const navId = navLink.id.split('-')[1];
+                const navContent = document.getElementById('nav-content-' + navId);
+                if (navContent) {
+                    // Hide other nav contents
+                    hideOtherNavContents('nav-content-' + navId);
+
+                    navContent.classList.remove('hidden');
+                    navContent.style.maxHeight = navContent.scrollHeight + 'px';
+                    document.getElementById('main-content').classList.add('blur');
+                }
+            });
+
+            navLink.addEventListener('mouseout', function(event) {
+                const navId = navLink.id.split('-')[1];
+                const navContent = document.getElementById('nav-content-' + navId);
+                if (navContent && !isMouseInside(navContent, event)) {
+                    navContent.style.maxHeight = 0;
+                    navContent.classList.add('hidden');
+                    document.getElementById('main-content').classList.remove('blur');
+                }
+            });
+        });
+
+        navContents.forEach(function(navContent) {
+            navContent.addEventListener('mouseout', function(event) {
+                if (!isMouseInside(navContent, event)) {
+                    navContent.style.maxHeight = 0;
+                    navContent.classList.add('hidden');
+                    document.getElementById('main-content').classList.remove('blur');
+                }
+            });
+        });
+    });
+
+
+    document.addEventListener("DOMContentLoaded", function() {
+        const stickyBanner = document.getElementById("stickyBanner");
+        const footer = document.querySelector("footer");
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    stickyBanner.style.bottom = `${footer.clientHeight}px`;
+                } else {
+                    stickyBanner.style.bottom = '0';
+                }
+            });
+        }, { threshold: 1 });
+
+        observer.observe(footer);
+    });
+
+    // window.addEventListener('scroll', function() {
+    //     const leftColumn = document.querySelector('.left-column');
+    //     const rightColumn = document.querySelector('.right-column');
+    //     const stickyElement = document.querySelector('.sticky-element');
+    //
+    //     var leftColumnBottom = leftColumn.getBoundingClientRect().bottom;
+    //     var rightColumnBottom = rightColumn.getBoundingClientRect().bottom;
+    //
+    //     if (leftColumnBottom <= 0 && rightColumnBottom > window.innerHeight) {
+    //         leftColumn.classList.add('sticky-element');
+    //     } else {
+    //         leftColumn.classList.remove('sticky-element');
+    //     }
+    // });
+
+
+</script>
+</body>
+</html>
