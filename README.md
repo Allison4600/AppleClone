@@ -16,3 +16,7 @@ These are some of the screenshots about the assessment.
 ![product-page-3](https://github.com/Allison4600/Apple/assets/90033268/9c30e0b2-2f33-43f1-8225-afb1a8db7abd)
 ![product-page-4](https://github.com/Allison4600/Apple/assets/90033268/9769c4c2-5bd2-41e8-ad34-1b070e15361f)
 ![product-page-5](https://github.com/Allison4600/Apple/assets/90033268/971b83c0-4a65-4b85-bc41-bdf6ce012cb9)
+
+![productDeatils page - 1](https://github.com/Allison4600/AppleClone/assets/90033268/8cda521f-7e54-4669-9f34-3621bbe2e54f)
+![productDeatils page - 2](https://github.com/Allison4600/AppleClone/assets/90033268/5d26ebab-9af6-4b7e-a0d4-dd958e0edbf4)
+![productDeatils page - 3](https://github.com/Allison4600/AppleClone/assets/90033268/268a7f1b-925a-4640-b3ad-b66cc7535835)
